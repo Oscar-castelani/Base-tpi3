@@ -386,6 +386,23 @@ table td img {
     text-justify: inter-word;
 }
 
+.btn-rosa {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FFB6D9;
+    color: #000000;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-rosa:hover, .btn-rosa:focus {
+    background-color: #FF9EC7;
+    color: #000000;
+    text-decoration: none;
+}
 
 @media (max-width: 767.98px) {
 

@@ -12,14 +12,14 @@ app.get('/api/products', (req, res) => {
   const products = [
     { 
       id: 1, 
-      name: 'Gato parlante Bluetooth', 
-      oldPrice: 17500, 
+      name: 'Plantita 1', 
+      oldPrice: 25.000, 
       price: 15000, 
       urlImg: 'https://viacotone.com/wp-content/uploads/2020/11/parlante-don-gato-1.jpg'
     },
     {
       id: 2, 
-      name: 'Campera Keyboard programador',  
+      name: 'Campera teclado programador',  
       oldPrice: 11500, 
       price: 11200, 
       urlImg: 'https://www.swiss-miss.com/wp-content/uploads/2023/04/Fs4tHTuWYBAARLj-480x457.jpeg' 
