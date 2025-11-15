@@ -412,3 +412,22 @@ table td img {
     }
 
 }
+/* Ajustar tamaño del slider con imágenes */
+.slider-img {
+    width: 100%;
+    height: 55vh;          /* Ajusta el alto del banner */
+    object-fit: cover;     /* Recorta sin deformar */
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .slider-img {
+        height: 40vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .slider-img {
+        height: 35vh;
+    }
+}
