@@ -1,6 +1,7 @@
 body {
-    background-color: #226db3ee;
-    font-family: 'Open Sans Condensed', sans-serif;
+    background-color: #ff75f4;
+    font-family: 'roboto', sans-serif;
+    color:#253307;
 }
 
 a {
@@ -18,7 +19,7 @@ a {
     padding: 0;
     list-style: none;
     font-size: 16px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Righteous', cursive;
 }
 
 .top-nav li {
@@ -43,15 +44,20 @@ a {
 .site-logo {
     font-size: 2rem;
     line-height: 1;
-    font-family: 'Righteous', cursive;
+    font-family: 'roboto', sans-serif;
 }
 
+/* Bloque CSS para la fuente de "La Tiendita" */
+.site-logo .distinta {
+    /* *** FUENTE PARA LA TIENDITA *** */
+    font-family: 'Righteous', cursive; 
+}
 .site-logo img {
     max-height: 60px;
 }
 
 .site-logo a {
-    color: #0a4a92;
+    color: #000000;
     text-decoration: none;
 }
 
@@ -62,7 +68,7 @@ a {
 .header-item {
     padding: .25rem .4rem;
     cursor: pointer;
-    color: #656565;
+    color: #ffa4b7;
     transition: color .2s linear 0s;
     font-weight: bold;
     line-height: 2.5;
@@ -139,7 +145,7 @@ a.product-name:hover, a.product-name:focus {
 
 .footer-logo {
     font-size: 1.65rem;
-    font-family: 'Righteous', cursive;
+    font-family: 'roboto', sans-serif;
 }
 
 .footer-nav {
@@ -275,7 +281,7 @@ a.product-name:hover, a.product-name:focus {
 }
 
 .sidebar {
-    border-left: 1px solid #004d9b;
+    border-left: 1px solid #3972aa;
     border-top: 0 solid #c7c8c9;
 }
 
@@ -389,7 +395,7 @@ table td img {
 .btn-rosa {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #FFB6D9;
+    background-color: #ff75f4;
     color: #000000;
     border: 2px solid #000000;
     border-radius: 5px;
