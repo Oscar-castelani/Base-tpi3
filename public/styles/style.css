@@ -8,6 +8,11 @@ a {
     transition: color .2s linear 0s;
 }
 
+.top-header {
+    background-color: #ff75f4; /* rosa igual al body */
+    color: black;               /* color de texto */
+}
+
 .logo-small {
     width:200px; 
     height: auto;
@@ -33,7 +38,8 @@ a {
 }
 
 .top-nav li a {
-    color: #ffffff;
+    color: black;
+    font-size: 1.5rem;
     text-decoration: none;
 }
 
