@@ -162,18 +162,24 @@ flex-direction: row-reverse;
 
 }
 .product-item {
-    box-shadow: #1e5ab3 0 0 10px 1px;
+    border: #000 solid 1.5px;
+    border-radius: 10px;
 }
 
 .product-item:hover {
     box-shadow: #000000 0 0 10px 1px;
 }
 
+.product-item img {
+    border-radius: 10px;
+}
+
 .product-name {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     font-weight: 600;
     color: #014eb3;
     text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .product-name.large {
@@ -190,20 +196,27 @@ flex-direction: row-reverse;
 }
 
 a.product-name:hover, a.product-name:focus {
-    color: #ffffff;
+    color: #ff67de;
     text-decoration: none;
 }
 
-.product-price-old {
-    text-decoration: line-through;
-    color: #a3a3a3;
-    font-weight: 600;
-    font-size: 18px;
+.product-description {
+    font-size: 20px;       /* cambia tamaño */
+    color: black;           /* color gris más suave */
+    line-height: 1.4;      /* separa líneas */
+    margin-top: -10px;     /* sube la descripción si la querés más cerca del nombre */
+}
+
+.product-description strong {
+    color: #000;           /* texto fuerte en negro */
+    font-weight: 700;      /* más grueso */
+    font-size: 20px;       /* un poco más grande */
 }
 
 .product-price {
     font-size: 24px;
     font-weight: 600;
+    color: #0011ff;
 }
 
 .footer-logo {
@@ -335,13 +348,7 @@ a.product-name:hover, a.product-name:focus {
     display: block;
 }
 
-.detail-price-old {
-    text-decoration: line-through;
-    font-size: 1.6rem;
-    font-weight: bold;
-    color: #939393;
-    display: block;
-}
+
 
 .sidebar {
     border-left: 1px solid #3972aa;

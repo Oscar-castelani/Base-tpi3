@@ -119,12 +119,6 @@ a.product-name:hover, a.product-name:focus {
     text-decoration: none;
 }
 
-.product-price-old {
-    text-decoration: line-through;
-    color: #ccc;
-    font-weight: 600;
-    font-size: 18px;
-}
 
 .product-price {
     font-size: 24px;
@@ -238,13 +232,7 @@ a.product-name:hover, a.product-name:focus {
     display: block;
 }
 
-.detail-price-old {
-    text-decoration: line-through;
-    font-size: 1.6rem;
-    font-weight: bold;
-    color: #939393;
-    display: block;
-}
+
 
 .sidebar {
     border-left: 1px solid #c7c8c9;

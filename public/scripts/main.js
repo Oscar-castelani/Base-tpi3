@@ -24,11 +24,12 @@ document.addEventListener('DOMContentLoaded', () => {
                                                 <div class="col-12 mb-3">
                                                     <a href="#" class="product-name">${product.name}</a>
                                                 </div>
+                                                   
+                                                <div class="col-12 mb-2 product-description">
+                                                 ${product.description}
+                                                 </div>
+
                                                 <div class="col-12 mb-3">
-                                                    <span class="product-price-old">
-                                                    $${product.oldPrice}
-                                                    </span>
-                                                    <br>
                                                     <span class="product-price">
                                                     $${product.price}
                                                     </span>
