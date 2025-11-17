@@ -1,5 +1,5 @@
 body {
-    background-color: #ff75f4;
+    background-color: #ffc2e8; /* rosa claro */
     font-family: 'roboto', sans-serif;
     color:#253307;
 }
@@ -9,7 +9,7 @@ a {
 }
 
 .top-header {
-    background-color: #ff75f4; /* rosa igual al body */
+    background-color: #ffc2e8; /* rosa igual al body */
     color: black;               /* color de texto */
 }
 
@@ -54,9 +54,9 @@ a {
 }
 
 /* Bloque CSS para la fuente de "La Tiendita" */
-.site-logo .distinta {
-    /* *** FUENTE PARA LA TIENDITA *** */
-    font-family: 'Righteous', cursive; 
+.distinta {
+    font-family: 'Righteous', cursive;
+    font-weight: bold;
 }
 .site-logo img {
     max-height: 60px;
@@ -104,6 +104,63 @@ a {
     padding-bottom: .3rem;
 }
 
+.bienvenidos {
+    font-family: 'Righteous', cursive;
+    font-size: 2.5rem;
+    color:  #020202;
+    margin-bottom: 9px;
+    text-align: center; /* 1. CENTRAR EL TÍTULO */
+    font-weight: normal; /* 2. MENOS GROSOR (Si el Righteous lo permite, si no usa la fuente 'Roboto' para esto) */
+}
+
+.bienvenidos a {
+    text-decoration: none; /*para quitar el subrayado del enlace*/
+    color: inherit;
+}
+.parrafo-bienvenidos {
+    font-size: 1.25rem;
+    color: #253307;
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+    line-height: 1.6;
+    text-align: center; /* Centra el texto dentro del bloque */
+}
+
+/*sobre nosotros*/
+.contenedor-nosotros{
+    padding-top: 5rem;
+    width: 90%;
+}
+@media(min-width: 768px) {
+.contenedor-nosotros{
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+    }   
+}
+.texto-nosotros, .imagenes-nosotros{
+    flex: 1 1 calc(50% - 1rem) ;
+}
+@media (min-width: 768px){
+.contenedor-nosotros.invertido{
+flex-direction: row-reverse;
+}
+
+  /* Espaciados laterales opcionales para que respire */
+.contenedor-nosotros:not(.invertido) .texto-nosotros { margin-right: 5rem; }
+.contenedor-nosotros.invertido .texto-nosotros      { margin-left: 5rem; }
+.imagenes-nosotros{
+    display: flex;
+    justify-content: space-between;
+}
+
+.imagenes-nosotros img{
+    border-radius: 5px;
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+
+}
 .product-item {
     box-shadow: #1e5ab3 0 0 10px 1px;
 }
@@ -401,7 +458,7 @@ table td img {
 .btn-rosa {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #ff75f4;
+    background-color:  #ffc2e8; /* rosa claro */
     color: #000000;
     border: 2px solid #000000;
     border-radius: 5px;
