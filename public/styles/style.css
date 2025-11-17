@@ -1,5 +1,5 @@
 body {
-    background-color: #ff75f4;
+    background-color: #ffc2e8; /* rosa claro */
     font-family: 'roboto', sans-serif;
     color:#253307;
 }
@@ -9,7 +9,7 @@ a {
 }
 
 .top-header {
-    background-color: #ff75f4; /* rosa igual al body */
+    background-color: #ffc2e8; /* rosa igual al body */
     color: black;               /* color de texto */
 }
 
@@ -54,9 +54,9 @@ a {
 }
 
 /* Bloque CSS para la fuente de "La Tiendita" */
-.site-logo .distinta {
-    /* *** FUENTE PARA LA TIENDITA *** */
-    font-family: 'Righteous', cursive; 
+.distinta {
+    font-family: 'Righteous', cursive;
+    font-weight: bold;
 }
 .site-logo img {
     max-height: 60px;
@@ -104,7 +104,63 @@ a {
     padding-bottom: .3rem;
 }
 
+.bienvenidos {
+    font-family: 'Righteous', cursive;
+    font-size: 2.5rem;
+    color:  #020202;
+    margin-bottom: 9px;
+    text-align: center; /* 1. CENTRAR EL TÍTULO */
+    font-weight: normal; /* 2. MENOS GROSOR (Si el Righteous lo permite, si no usa la fuente 'Roboto' para esto) */
+}
 
+.bienvenidos a {
+    text-decoration: none; /*para quitar el subrayado del enlace*/
+    color: inherit;
+}
+.parrafo-bienvenidos {
+    font-size: 1.25rem;
+    color: #253307;
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+    line-height: 1.6;
+    text-align: center; /* Centra el texto dentro del bloque */
+}
+
+/*sobre nosotros*/
+.contenedor-nosotros{
+    padding-top: 5rem;
+    width: 90%;
+}
+@media(min-width: 768px) {
+.contenedor-nosotros{
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+    }   
+}
+.texto-nosotros, .imagenes-nosotros{
+    flex: 1 1 calc(50% - 1rem) ;
+}
+@media (min-width: 768px){
+.contenedor-nosotros.invertido{
+flex-direction: row-reverse;
+}
+
+  /* Espaciados laterales opcionales para que respire */
+.contenedor-nosotros:not(.invertido) .texto-nosotros { margin-right: 5rem; }
+.contenedor-nosotros.invertido .texto-nosotros      { margin-left: 5rem; }
+.imagenes-nosotros{
+    display: flex;
+    justify-content: space-between;
+}
+
+.imagenes-nosotros img{
+    border-radius: 5px;
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+
+}
 .product-item {
     border: #000 solid 1.5px;
     border-radius: 10px;
@@ -409,7 +465,7 @@ table td img {
 .btn-rosa {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #ff75f4;
+    background-color:  #ffc2e8; /* rosa claro */
     color: #000000;
     border: 2px solid #000000;
     border-radius: 5px;
@@ -489,4 +545,66 @@ table td img {
 .social-links-container a:hover {
     /* Cambia al color rosa/morado que elegiste */
     color: #ff67de !important; 
+}
+/* --- Ajustes para el Header Modificado --- */
+
+/* Clase para el logo principal en el header (más pequeño y responsivo) */
+.logo-header {
+    /* Tamaño base para el logo */
+    width: 120px; 
+    height: auto;
+    /* Ajuste de margen para espaciado con el menú de contacto/hamburguesa */
+    margin-right: 15px; 
+}
+
+/* Ajuste para pantallas pequeñas (móviles) si es necesario */
+@media (max-width: 576px) {
+    .logo-header {
+        width: 100px; /* Un poco más pequeño en móviles */
+    }
+}
+
+/* Estilo para el botón del menú hamburguesa */
+.navbar-toggler {
+    /* Quitar borde y color de fondo predeterminado de Bootstrap */
+    border: none;
+    padding: 0;
+    line-height: 1;
+}
+
+/* Estilo del ícono (asumiendo que estás usando Font Awesome para el ícono) */
+.navbar-toggler-icon i {
+    color: #ffffff; /* Color del ícono del menú */
+    transition: color 0.3s ease;
+}
+
+.navbar-toggler:focus {
+    /* Quitar el anillo de enfoque (focus ring) al hacer clic */
+    box-shadow: none;
+}
+
+/* Estilo para los enlaces en el menú Offcanvas */
+.offcanvas-body .nav-link {
+    font-size: 1.2rem;
+    padding: 0.5rem 0;
+    transition: color 0.3s ease;
+}
+
+.offcanvas-rosa {
+    background-color: #ff75f4 !important;
+  }
+  .offcanvas-body .nav-link:hover {
+    color: #ffffff !important; /* Se queda blanco, no cambia */
+}
+nav ul li a:hover {
+    color: inherit !important;
+}
+/* --- FIX DEFINITIVO: evitar hover rosado solo en el menú offcanvas --- */
+.offcanvas-body .nav-link {
+    color: #ffffff !important; /* Texto blanco siempre */
+}
+
+.offcanvas-body .nav-link:hover,
+.offcanvas-body .nav-link:focus {
+    color: #ffffff !important; /* Mantener blanco en hover */
 }
