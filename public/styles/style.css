@@ -482,3 +482,65 @@ table td img {
     /* Cambia al color rosa/morado que elegiste */
     color: #ff67de !important; 
 }
+/* --- Ajustes para el Header Modificado --- */
+
+/* Clase para el logo principal en el header (más pequeño y responsivo) */
+.logo-header {
+    /* Tamaño base para el logo */
+    width: 120px; 
+    height: auto;
+    /* Ajuste de margen para espaciado con el menú de contacto/hamburguesa */
+    margin-right: 15px; 
+}
+
+/* Ajuste para pantallas pequeñas (móviles) si es necesario */
+@media (max-width: 576px) {
+    .logo-header {
+        width: 100px; /* Un poco más pequeño en móviles */
+    }
+}
+
+/* Estilo para el botón del menú hamburguesa */
+.navbar-toggler {
+    /* Quitar borde y color de fondo predeterminado de Bootstrap */
+    border: none;
+    padding: 0;
+    line-height: 1;
+}
+
+/* Estilo del ícono (asumiendo que estás usando Font Awesome para el ícono) */
+.navbar-toggler-icon i {
+    color: #ffffff; /* Color del ícono del menú */
+    transition: color 0.3s ease;
+}
+
+.navbar-toggler:focus {
+    /* Quitar el anillo de enfoque (focus ring) al hacer clic */
+    box-shadow: none;
+}
+
+/* Estilo para los enlaces en el menú Offcanvas */
+.offcanvas-body .nav-link {
+    font-size: 1.2rem;
+    padding: 0.5rem 0;
+    transition: color 0.3s ease;
+}
+
+.offcanvas-rosa {
+    background-color: #ff75f4 !important;
+  }
+  .offcanvas-body .nav-link:hover {
+    color: #ffffff !important; /* Se queda blanco, no cambia */
+}
+nav ul li a:hover {
+    color: inherit !important;
+}
+/* --- FIX DEFINITIVO: evitar hover rosado solo en el menú offcanvas --- */
+.offcanvas-body .nav-link {
+    color: #ffffff !important; /* Texto blanco siempre */
+}
+
+.offcanvas-body .nav-link:hover,
+.offcanvas-body .nav-link:focus {
+    color: #ffffff !important; /* Mantener blanco en hover */
+}
