@@ -9,7 +9,7 @@
     --rosa-claro: #ffe1f2;
     --titulos:'Arima Madurai',cursive;
     --gris: #6c757d;
-   
+
 }
 
 body {
@@ -30,74 +30,73 @@ a {
 
 
 .logo-header {
-  margin-left: 40px; 
-  width: 150px;
-  height: auto;
- 
+margin-left: 40px; 
+width: 150px;
+height: auto;
 }
 
 /* ------------------------------
-   BUSCADOR EN EL HEADER
+BUSCADOR EN EL HEADER
    ------------------------------ */
 
 /* Contenedor principal del buscador */
 .buscador {
-  display: flex;
-  align-items: center;
-  gap: .6rem;
-  flex: 1;              /* ocupa espacio entre logo y menú */
-  max-width: 520px;      /* tamaño equilibrado */
-  min-width: 220px;
+display: flex;
+align-items: center;
+gap: .6rem;
+flex: 1;              /* ocupa espacio entre logo y menú */
+max-width: 520px;      /* tamaño equilibrado */
+min-width: 220px;
 }
 
 /* Input blanco estilo La Tiendita */
 .buscador input {
-  flex: 1;
-  height: 42px;
-  background: #fff;
-  color: var(--oscuro);
-  border: 2px solid #000;         /* borde negro, estilo tiendita */
-  border-radius: 999px;
-  padding: 0 1.2rem;
-  font-size: 1.4rem;
-  outline: none;
+flex: 1;
+height: 42px;
+background: #fff;
+color: var(--oscuro);
+border: 2px solid #000;         /* borde negro, estilo tiendita */
+border-radius: 999px;
+padding: 0 1.2rem;
+font-size: 1.4rem;
+outline: none;
 }
 
 .buscador input::placeholder {
-  color: #666;
+color: #666;
 }
 
 /* Botón blanco redondo */
 .buscador button {
-  width: 42px;
-  height: 42px;
-  background: #fff;
-  border: 2px solid #000;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
+width: 42px;
+height: 42px;
+background: #fff;
+border: 2px solid #000;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
 }
 
 .buscador button i {
-  font-size: 1.4rem;
-  color: #000;
+font-size: 1.4rem;
+color: #000;
 }
 
 .top-header .row {
-  display: flex;
-  align-items: center;
+display: flex;
+align-items: center;
 }
 
 
 .top-header .buscador {
-  flex: 1;
+flex: 1;
 }
 
 
 .top-header .col-auto {
-  flex-shrink: 0;
+flex-shrink: 0;
 }
 
 .navbar-toggler {
@@ -141,6 +140,44 @@ a {
     font-family: 'roboto', sans-serif;
 }
 
+/* Bloque CSS para la fuente de "La Tiendita" */
+.distinta {
+    font-family: 'amatic sc', cursive;
+    font-weight: lighter;
+}
+.site-logo img {
+    max-height: 60px;
+}
+
+.site-logo a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.site-logo a:hover, .site-logo a:focus {
+    color: #000;
+}
+
+.header-item {
+    padding: .25rem .4rem;
+    cursor: pointer;
+    color: #ffa4b7;
+    transition: color .2s linear 0s;
+    font-weight: lighter;
+    line-height: 2.5;
+    text-decoration: none;
+}
+
+.header-item img {
+    max-width: 220px;
+    max-height: 55px;
+}
+
+.header-item-holder .header-item:hover, .header-item-holder  .header-item:focus {
+    color: #000;
+    text-decoration: none;
+}
+
 .nav-item {
     margin-right: 5px;
 }
@@ -155,13 +192,17 @@ a {
 }
 
 .bienvenidos {
-    font-family: 'Righteous', cursive;
+    font-family: 'roboto', sans-serif;
     font-size: 2.5rem;
     margin-bottom: 9px;
-    text-align: center; /* 1. CENTRAR EL TÍTULO */
-    font-weight: normal; /* 2. MENOS GROSOR (Si el Righteous lo permite, si no usa la fuente 'Roboto' para esto) */
+    text-align: center; /* 1. Centrar título */
+    font-weight: normal; /* 2. Menos grosor */
 }
 
+.bienvenidos a {
+    text-decoration: none; /*Para quitar el subrayado del enlace*/
+    color: inherit;
+}
 .parrafo-bienvenidos {
     font-size: 1.25rem;
     color: var(--verdeoscuro);
@@ -172,10 +213,11 @@ a {
     font-weight: 600;
 }
 
-/*sobre nosotros*/
+/*Sección sobre nosotros*/
 .contenedor-nosotros{
     padding-top: 5rem;
     width: 90%;
+    margin: 0 auto; /* Para centrar el título principal */
 }
 @media(min-width: 768px) {
 .contenedor-nosotros{
@@ -192,22 +234,20 @@ a {
 .contenedor-nosotros.invertido{
 flex-direction: row-reverse;
 }
+}
 
   /* Espaciados laterales opcionales para que respire */
-.contenedor-nosotros:not(.invertido) .texto-nosotros { margin-right: 5rem; }
-.contenedor-nosotros.invertido .texto-nosotros      { margin-left: 5rem; }
 .imagenes-nosotros{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .imagenes-nosotros img{
     border-radius: 5px;
     width: 100%;
-    max-width: 450px;
+    max-width: 500px;
     height: auto;
 
-}
 }
 
 .product-item {
@@ -396,7 +436,6 @@ a.product-name:hover, a.product-name:focus {
 }
 
 
-
 .sidebar {
     border-left: 1px solid #3972aa;
     border-top: 0 solid #c7c8c9;
@@ -511,7 +550,7 @@ table td img {
 
 .btn-rosa {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 7px 15px;
     background-color:  #ffc2e8; /* rosa claro */
     color: #000000;
     border: 2px solid #000000;
@@ -598,8 +637,8 @@ table td img {
 
 .offcanvas-rosa {
     background-color: #ff75f4 !important;
-  }
-  .offcanvas-body .nav-link:hover {
+}
+.offcanvas-body .nav-link:hover {
     color: #ffffff !important; /* Se queda blanco, no cambia */
 }
 nav ul li a:hover {
