@@ -1,22 +1,110 @@
+:root{
+    --verde:#00A149;
+    --verdeoscuro: #253307;
+    --blanco:#fff;
+    --rojo:#881014;
+    --oscuro:#000;
+    --rosa:#ffc2e8;
+    --rosaoscuro:#ff67de;
+    --rosa-claro: #ffe1f2;
+    --titulos:'Arima Madurai',cursive;
+    --gris: #6c757d;
+   
+}
+
 body {
-    background-color: #ffc2e8; /* rosa claro */
+    background-color: var(--blanco);
     font-family: 'roboto', sans-serif;
-    color:#253307;
 }
 
 a {
     transition: color .2s linear 0s;
 }
 
+
 .top-header {
-    background-color: #ffc2e8; /* rosa igual al body */
-    color: black;               /* color de texto */
+    background-color: var(--rosa); 
+    color: var(--oscuro);      
+    position: relative;        
 }
 
-.logo-small {
-    width:200px; 
-    height: auto;
-    margin-right: 20px; 
+
+.logo-header {
+  margin-left: 40px; 
+  width: 150px;
+  height: auto;
+ 
+}
+
+/* ------------------------------
+   BUSCADOR EN EL HEADER
+   ------------------------------ */
+
+/* Contenedor principal del buscador */
+.buscador {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  flex: 1;              /* ocupa espacio entre logo y menú */
+  max-width: 520px;      /* tamaño equilibrado */
+  min-width: 220px;
+}
+
+/* Input blanco estilo La Tiendita */
+.buscador input {
+  flex: 1;
+  height: 42px;
+  background: #fff;
+  color: var(--oscuro);
+  border: 2px solid #000;         /* borde negro, estilo tiendita */
+  border-radius: 999px;
+  padding: 0 1.2rem;
+  font-size: 1.4rem;
+  outline: none;
+}
+
+.buscador input::placeholder {
+  color: #666;
+}
+
+/* Botón blanco redondo */
+.buscador button {
+  width: 42px;
+  height: 42px;
+  background: #fff;
+  border: 2px solid #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.buscador button i {
+  font-size: 1.4rem;
+  color: #000;
+}
+
+.top-header .row {
+  display: flex;
+  align-items: center;
+}
+
+
+.top-header .buscador {
+  flex: 1;
+}
+
+
+.top-header .col-auto {
+  flex-shrink: 0;
+}
+
+.navbar-toggler {
+    position: absolute;
+    top: 60px;    
+    right: 40px;  
+    font-size: 1.5rem; 
 }
 
 .top-nav {
@@ -44,7 +132,7 @@ a {
 }
 
 .top-nav li a:hover, .top-nav li a:focus {
-    color: #fff;
+    color: var(--blanco);
 }
 
 .site-logo {
@@ -107,7 +195,6 @@ a {
 .bienvenidos {
     font-family: 'roboto', sans-serif;
     font-size: 2.5rem;
-    color:  #020202;
     margin-bottom: 9px;
     text-align: center; /* 1. Centrar título */
     font-weight: normal; /* 2. Menos grosor */
@@ -119,11 +206,12 @@ a {
 }
 .parrafo-bienvenidos {
     font-size: 1.25rem;
-    color: #253307;
+    color: var(--verdeoscuro);
     max-width: 600px;
     margin: 0 auto 20px auto;
     line-height: 1.6;
-    text-align: center; /* Centra el texto dentro del bloque */
+    text-align: center;
+    font-weight: 600;
 }
 
 /*Sección sobre nosotros*/
@@ -137,7 +225,7 @@ a {
         display: flex;
         justify-content: space-between;
         gap: 2rem;
-        align-items: center; /* Para centrar verticalmente los elementos de texto e imagen */
+        align-items: center;
     }   
 }
 .texto-nosotros, .imagenes-nosotros{
@@ -162,19 +250,26 @@ flex-direction: row-reverse;
     height: auto;
 
 }
+
 .product-item {
-    box-shadow: #1e5ab3 0 0 10px 1px;
+    border: #000 solid 1.5px;
+    border-radius: 10px;
 }
 
 .product-item:hover {
     box-shadow: #000000 0 0 10px 1px;
 }
 
+.product-item img {
+    border-radius: 10px;
+}
+
 .product-name {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     font-weight: 600;
     color: #014eb3;
     text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .product-name.large {
@@ -191,20 +286,27 @@ flex-direction: row-reverse;
 }
 
 a.product-name:hover, a.product-name:focus {
-    color: #ffffff;
+    color: var(--rosaoscuro);
     text-decoration: none;
 }
 
-.product-price-old {
-    text-decoration: line-through;
-    color: #a3a3a3;
-    font-weight: 600;
-    font-size: 18px;
+.product-description {
+    font-size: 20px;       /* cambia tamaño */
+    color: black;           /* color gris más suave */
+    line-height: 1.4;      /* separa líneas */
+    margin-top: -10px;     /* sube la descripción si la querés más cerca del nombre */
+}
+
+.product-description strong {
+    color: #000;           /* texto fuerte en negro */
+    font-weight: 700;      /* más grueso */
+    font-size: 20px;       /* un poco más grande */
 }
 
 .product-price {
     font-size: 24px;
     font-weight: 600;
+    color: #0011ff;
 }
 
 .footer-logo {
@@ -254,13 +356,11 @@ a.product-name:hover, a.product-name:focus {
     margin-right: 10px;
 }
 
-.footer-logo a:hover, .footer-logo a:focus, .footer-nav a:hover, .footer-nav a:focus, .social-icon:hover, .social-icon:focus {
-    color: #fff;
-}
 
 .product-item {
     position: relative;
     overflow: hidden;
+    background-color: var(--blanco);
 }
 
 .logo-medium {
@@ -336,13 +436,6 @@ a.product-name:hover, a.product-name:focus {
     display: block;
 }
 
-.detail-price-old {
-    text-decoration: line-through;
-    font-size: 1.6rem;
-    font-weight: bold;
-    color: #939393;
-    display: block;
-}
 
 .sidebar {
     border-left: 1px solid #3972aa;
@@ -496,39 +589,6 @@ table td img {
     }
 }
 
-@media (max-width: 480px) {
-    .slider-img {
-        height: 35vh;
-    }
-}
-@media (max-width: 767.98px) {
-    .sidebar {
-        border-left: 0 solid #c7c8c9;
-        border-top: 1px solid #c7c8c9;
-    }
-}
-/* Ajustar tamaño del slider con imágenes */
-.slider-img {
-    width: 100%;
-    height: 55vh;         /* Ajusta el alto del banner */
-    object-fit: cover;    /* Recorta sin deformar */
-    display: block;
-}
-
-@media (max-width: 768px) {
-    .slider-img {
-        height: 40vh;
-    }
-}
-
-@media (max-width: 480px) {
-    .slider-img {
-        height: 35vh;
-    }
-}
-
-/* Estilos para los íconos de redes sociales en el footer (CORREGIDOS) */
-
 /* Asegura que los íconos se comporten como bloques para que puedan ser alineados, y añade transición */
 .social-links-container a {
     display: inline-block;
@@ -539,4 +599,217 @@ table td img {
 .social-links-container a:hover {
     /* Cambia al color rosa/morado que elegiste */
     color: #ff67de !important; 
+}
+/* --- Ajustes para el Header Modificado --- */
+
+
+/* Ajuste para pantallas pequeñas (móviles) si es necesario */
+@media (max-width: 576px) {
+    .logo-header {
+        width: 100px; /* Un poco más pequeño en móviles */
+    }
+}
+
+/* Estilo para el botón del menú hamburguesa */
+.navbar-toggler {
+    /* Quitar borde y color de fondo predeterminado de Bootstrap */
+    border: none;
+    padding: 0;
+    line-height: 1;
+}
+
+/* Estilo del ícono (asumiendo que estás usando Font Awesome para el ícono) */
+.navbar-toggler-icon i {
+    color: #ffffff; /* Color del ícono del menú */
+    transition: color 0.3s ease;
+}
+
+.navbar-toggler:focus {
+    /* Quitar el anillo de enfoque (focus ring) al hacer clic */
+    box-shadow: none;
+}
+
+/* Estilo para los enlaces en el menú Offcanvas */
+.offcanvas-body .nav-link {
+    font-size: 1.2rem;
+    padding: 0.5rem 0;
+    transition: color 0.3s ease;
+}
+
+.offcanvas-rosa {
+    background-color: #ff75f4 !important;
+}
+.offcanvas-body .nav-link:hover {
+    color: #ffffff !important; /* Se queda blanco, no cambia */
+}
+nav ul li a:hover {
+    color: inherit !important;
+}
+/* --- FIX DEFINITIVO: evitar hover rosado solo en el menú offcanvas --- */
+.offcanvas-body .nav-link {
+    color: #ffffff !important; /* Texto blanco siempre */
+}
+
+.offcanvas-body .nav-link:hover,
+.offcanvas-body .nav-link:focus {
+    color: #ffffff !important; /* Mantener blanco en hover */
+}
+
+.mapa {
+    max-width: 98%;
+    display: block;
+    margin: 0 auto;
+    margin-left: 20px;
+    margin-top: 40px;
+    border-radius: 8px;
+    border: 2px solid;
+    padding: 20px;
+    text-align: center;
+}
+.mapa iframe {
+    width: 90%;
+    height: 450px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.contacto {
+	margin: 5%;
+}
+
+.contacto-contenedor {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px; 
+  border: solid 2px red;
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: pink;
+}
+
+.contacto-form {
+	display: flex;
+	flex-direction: column;
+	max-width: 400px;
+	flex: 1; 
+}
+
+.contacto-texto {
+  flex: 1;
+  font-size: 2rem;
+  line-height: 1.6;
+  color: black;
+}
+
+.contacto-form input,
+.contacto-form textarea {  
+	margin-bottom: 1em;
+	padding: 0.5em;
+	width: 100%;
+}
+
+.blog{
+  background-color: white;
+  max-width: 120rem;
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  border: solid;
+  border-radius: 12px;
+}
+
+.intro {
+    font-size: 1.5rem;
+    text-align: left;
+    font-weight: 600;
+    color: rgb(8, 92, 8);
+    margin-top: 50px;
+}
+
+
+/* Títulos */
+.blog h2{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  color: black;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 1.6rem;
+  padding-bottom: .6rem;
+  text-decoration: underline;
+}
+
+.blog .consejos ol li{ margin-bottom: .8rem; }
+
+.blog h3{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  color: rgb(8, 92, 8);
+  font-weight: 600;
+  margin-left: 50px;
+}
+
+article {
+  display: flex;
+  align-items: center;
+  gap: 20px;           
+  margin-bottom: 40px;
+}
+
+article img {
+  width: 40%;       
+  height: auto;
+  border-radius: 8px;   
+  object-fit: cover;
+}
+
+.texto-blog{
+    font-size: 1.5rem;
+}
+
+.consejos ol {
+  counter-reset: item;              /* reinicia la numeración personalizada */
+  list-style: none;                 /* quita la numeración clásica */
+  padding-left: 0;
+  margin: 30px 0;
+}
+
+.consejos li {
+  counter-increment: item;          /* incrementa el contador */
+  margin-bottom: 18px;
+  padding: 18px 20px;
+  background: lightgrey;              
+  border-left: 5px solid #8bc34a;   /* detalle vertical tipo “premium” */
+  border-radius: 8px;
+  font-size: 18px;
+  line-height: 1.6;
+  position: relative;
+  font-weight: 500;
+  max-width: 95%;
+  margin-left: 40px;
+}
+
+/* Burbuja de número estilizada */
+.consejos li::before {
+  content: counter(item);
+  position: absolute;
+  left: -35px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #8bc34a;
+  color: white;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
