@@ -9,7 +9,7 @@
     --rosa-claro: #ffe1f2;
     --titulos:'Arima Madurai',cursive;
     --gris: #6c757d;
-   
+
 }
 
 body {
@@ -30,74 +30,73 @@ a {
 
 
 .logo-header {
-  margin-left: 40px; 
-  width: 150px;
-  height: auto;
- 
+margin-left: 40px; 
+width: 150px;
+height: auto;
 }
 
 /* ------------------------------
-   BUSCADOR EN EL HEADER
+BUSCADOR EN EL HEADER
    ------------------------------ */
 
 /* Contenedor principal del buscador */
 .buscador {
-  display: flex;
-  align-items: center;
-  gap: .6rem;
-  flex: 1;              /* ocupa espacio entre logo y menú */
-  max-width: 520px;      /* tamaño equilibrado */
-  min-width: 220px;
+display: flex;
+align-items: center;
+gap: .6rem;
+flex: 1;              /* ocupa espacio entre logo y menú */
+max-width: 520px;      /* tamaño equilibrado */
+min-width: 220px;
 }
 
 /* Input blanco estilo La Tiendita */
 .buscador input {
-  flex: 1;
-  height: 42px;
-  background: #fff;
-  color: var(--oscuro);
-  border: 2px solid #000;         /* borde negro, estilo tiendita */
-  border-radius: 999px;
-  padding: 0 1.2rem;
-  font-size: 1.4rem;
-  outline: none;
+flex: 1;
+height: 42px;
+background: #fff;
+color: var(--oscuro);
+border: 2px solid #000;         /* borde negro, estilo tiendita */
+border-radius: 999px;
+padding: 0 1.2rem;
+font-size: 1.4rem;
+outline: none;
 }
 
 .buscador input::placeholder {
-  color: #666;
+color: #666;
 }
 
 /* Botón blanco redondo */
 .buscador button {
-  width: 42px;
-  height: 42px;
-  background: #fff;
-  border: 2px solid #000;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
+width: 42px;
+height: 42px;
+background: #fff;
+border: 2px solid #000;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
 }
 
 .buscador button i {
-  font-size: 1.4rem;
-  color: #000;
+font-size: 1.4rem;
+color: #000;
 }
 
 .top-header .row {
-  display: flex;
-  align-items: center;
+display: flex;
+align-items: center;
 }
 
 
 .top-header .buscador {
-  flex: 1;
+flex: 1;
 }
 
 
 .top-header .col-auto {
-  flex-shrink: 0;
+flex-shrink: 0;
 }
 
 .navbar-toggler {
