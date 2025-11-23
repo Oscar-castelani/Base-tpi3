@@ -263,11 +263,14 @@ flex-shrink: 0;
 }
 
 .bienvenidos {
-    font-family: 'roboto', sans-serif;
-    font-size: 2.5rem;
+    font-family: "Pacifico", cursive;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 3rem;
     margin-bottom: 9px;
+    color: var(--oscuro);
+    margin-top: 5rem;
     text-align: center; /* 1. Centrar título */
-    font-weight: normal; /* 2. Menos grosor */
 }
 
 .bienvenidos a {
@@ -275,12 +278,12 @@ flex-shrink: 0;
     color: inherit;
 }
 .parrafo-bienvenidos {
-    font-size: 1.25rem;
-    color: var(--verdeoscuro);
+    font-size: 1.20rem;
+    color: var(--oscuro);
     max-width: 600px;
     margin: 0 auto 20px auto;
     line-height: 1.6;
-    text-align: center;
+    text-align: justify;
     font-weight: 600;
 }
 
