@@ -149,6 +149,61 @@ flex-shrink: 0;
     color: var(--blanco);
 }
 
+/* ==============================
+   ESTILOS CARRITO DE COMPRAS
+   ============================== */
+
+/* Contenedor del Botón de Carrito */
+.boton-carrito {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: relative; /* Necesario para posicionar el contador */
+    color: var(--oscuro); /* Negro para el ícono */
+    padding: 0;
+    transition: color 0.3s ease;
+    line-height: 1; /* Alineación del ícono */
+}
+
+/* Estilo del ícono del carrito al pasar el ratón */
+.boton-carrito:hover {
+    color: var(--verde); /* Puedes usar un color que contraste, elegí el verde que tienes definido */
+}
+
+/* Estilo para el ícono (asegurando el color negro) */
+.boton-carrito i {
+    color: var(--oscuro); /* Negro */
+    font-size: 2rem; /* Tamaño del ícono, puedes ajustar a tu gusto */
+}
+
+/* Estilo para el Contador de Productos (el número) */
+.contador-carrito {
+    position: absolute;
+    top: -10px; /* Sube la posición por encima del carrito */
+    right: -10px; /* Desplaza a la derecha del carrito */
+    
+    background-color: var(--rosaoscuro); /* Rosa fuerte para que destaque */
+    color: var(--oscuro); /* Número en negro */
+    
+    border-radius: 50%; /* Lo hace circular */
+    padding: 2px 7px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    min-width: 25px; /* Asegura un ancho mínimo para números de 1 o 2 dígitos */
+    text-align: center;
+    line-height: 1.2;
+}
+
+/* Ajuste al navbar-toggler, ya que lo movimos de posición absoluta */
+.top-header .col-auto .navbar-toggler {
+    position: static; /* Quitamos la posición absoluta que tenías */
+    /* El espaciado ahora lo maneja la clase Bootstrap 'gap-3' en el contenedor padre */
+}
+
+.top-header .row > .col-auto:last-child {
+    /* Establece un margen derecho forzado para separar los íconos del borde. */
+    margin-right: 30px !important; 
+}
 .site-logo {
     font-size: 2rem;
     line-height: 1;
