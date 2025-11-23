@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>La Tiendita</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="top-header container-fluid px-0">
+  <div class="row align-items-center py-2">
+
+    <!-- Logo -->
+    <div class="col-auto">
+     <h1 class="titulo-principal">
+     <a href="index.html">La Tiendita</a>
+      </h1>
+    </div>
+
+    <div class="col d-flex justify-content-center">
+      <form class="buscador" role="search" action="buscar.html">
+        <label for="q" class="sr-only">¿Qué estás buscando?</label>
+        <input id="q" name="q" type="search" placeholder="¿Qué estás buscando?">
+        <button type="submit" aria-label="Buscar">
+          <i class="fas fa-search"></i>
+        </button>
+      </form>
+    </div>
+
+  <div class="col-auto d-flex align-items-center gap-3 me-4"> 
+            
+            <button class="boton-carrito" aria-label="Ver carrito de compras">
+                <i class="fas fa-shopping-cart fa-2x"></i>
+                <span class="contador-carrito" id="contador-carrito">0</span>
+            </button>
+        </div>
+
+    <!-- Botón hamburguesa -->
+    <div class="col-auto">
+      <button class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav">
+        <i class="fas fa-bars fa-2x"></i>
+      </button>
+    </div>
+
+  </div>
+</header>
+
+
+    <!-- OFFCANVAS -->
+  <div class="offcanvas offcanvas-end offcanvas-rosa text-white" tabindex="-1" id="offcanvasNav">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title text-light">Menú</h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+    </div>
+
+    <div class="offcanvas-body">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo</a></li>
+        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+
+
+                    <!-- SLIDER -->
+    <div class="container-fluid px-0">
+    <div id="slider" class="carousel slide" data-bs-ride="carousel">
+
+      <!-- Indicadores Bootstrap 5 -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#slider" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#slider" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#slider" data-bs-slide-to="2"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/banner2plantas-de-interior-en-el-estudio.jpg" class="d-block w-100 slider-img" alt="Banner 1">
+        </div>
+
+        <div class="carousel-item">
+          <img src="images/banner3composicion-decorativa-de-flores.jpg" class="d-block w-100 slider-img" alt="Banner 2">
+        </div>
+
+        <div class="carousel-item">
+          <img src="images/pala-de-jardineria-macetas-de-turba-de-plantulas-y-suelo-sobre-banco-de-madera.jpg" class="d-block w-100 slider-img" alt="Banner 3">
+        </div>
+      </div>
+
+
+                          <!-- Controles -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+
+    </div>
+  </div>
+                        
+  <section class="blog">
+
+    <section class="intro">
+      <p>En La Tiendita creemos que cada planta es más que un simple adorno: es un ser vivo que nos acompaña, 
+        nos ayuda a respirar mejor y nos conecta con un ritmo más natural en medio de la vida acelerada.</p>
+      <p>Nuestro proyecto nació con un sueño sencillo: acercar la belleza del verde a cada rincón del hogar, sin importar si vivís en un departamento 
+        pequeño o en una casa con patio.</p>
+      <p>Acá vas a encontrar mucho más que plantas. Te ofrecemos un espacio donde aprender, inspirarse y descubrir cómo las plantas pueden transformar tu día a día.</p>
+    </section>
+
+    <section class="plantas">
+      <h2>"Nuestras plantas destacadas"</h2>
+
+      <h3>Monstera deliciosa (Costilla de Adán)</h3>
+
+      <article>
+      
+
+        <img src="images/monstera.jpg" alt="Planta Monstera deliciosa" />
+
+        <p class="texto-blog">También conocida como Costilla de Adán, es una de las plantas más elegidas por los amantes de la decoración natural. Sus hojas grandes, 
+            verdes y con perforaciones únicas aportan un toque exótico y elegante a cualquier ambiente. <br><br>
+        Además de su belleza, la Monstera es muy fácil de cuidar: prefiere lugares luminosos, pero sin sol directo, y agradece un riego moderado,
+        dejando secar un poco el sustrato entre cada vez.</p>
+            
+      </article>
+
+      <h3>Chamaedorea elegans (Palmera de salón)</h3>
+
+      <article>
+
+        <img src="images/chama.jpg" alt="Planta Monstera deliciosa" />
+        
+        <p class="texto-blog">Si buscás una planta que aporte verde, frescura y armonía dentro de casa, la Chamaedorea elegans —también conocida como palmera de salón— es 
+            una gran aliada. Su porte esbelto y sus hojas finas crean una sensación de calma y movimiento.<br><br>
+        Se adapta muy bien a ambientes con poca luz directa, lo que la convierte en una opción perfecta para interiores. Además, ayuda a mejorar la calidad del aire.</p>
+      </article>
+    </section>
+
+    <section class="consejos">
+      <h2>"10 consejos prácticos de jardinería"</h2>
+      <ol>
+        <li>Conocé tu planta: cada especie tiene necesidades únicas.</li>
+        <li>Observá la luz de tu casa: orientaciones norte y este suelen ser ideales.</li>
+        <li>Menos es más en el riego: el exceso de agua es el error más común.</li>
+        <li>Macetas con drenaje: fundamentales para evitar raíces podridas.</li>
+        <li>Fertilizá en las estaciones correctas: primavera y verano son clave.</li>
+        <li>Poda inteligente: eliminá hojas secas para estimular crecimiento.</li>
+        <li>Cambiá de maceta cuando crezca: el trasplante evita raíces asfixiadas.</li>
+        <li>Controlá plagas naturalmente: el jabón potásico es un aliado.</li>
+        <li>Agrupá plantas con necesidades similares: facilita su cuidado.</li>
+        <li>Disfrutá del proceso: la jardinería es también terapia y paciencia.</li>
+      </ol>
+    </section>
+
+    </section>
+
+  
+  <!-- FOOTER -->
+  <footer class="row">
+    <div class="col-12 bg-dark text-white pt-5 pb-4">
+      <div class="row">
+
+        <div class="col-lg-3 col-sm-6 mb-4 text-center text-sm-start">
+          <h3 class="footer-logo mb-3" style="font-family:'Righteous', sans-serif;">La Tiendita</h3>
+          <p class="small fst-italic">"Somos un pequeño lugar donde la belleza cotidiana encuentra su espacio."</p>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 mb-4 text-center text-sm-start">
+          <h5 class="mb-3">Nuestros valores</h5>
+          <ul class="list-unstyled footer-links">
+            <li><i class="fas fa-leaf me-2"></i>Calidad garantizada</li>
+            <li><i class="fas fa-heart me-2"></i>Selección cuidada</li>
+            <li><i class="fas fa-box-open me-2"></i>Embalaje seguro</li>
+            <li><i class="fas fa-star me-2"></i>Experiencia confiable</li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 mb-4 text-center text-sm-start">
+          <h5 class="mb-3">Enlaces útiles</h5>
+          <ul class="list-unstyled footer-links">
+            <li><a href="#" class="text-white text-decoration-none">FAQ</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Políticas y cambios</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Términos y condiciones</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Políticas de privacidad</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 mb-4 text-center text-sm-start">
+          <h5 class="mb-3">Redes sociales</h5>
+
+          <div class="social-links-container">
+            <a href="https://www.instagram.com/la_tiendita.deco?igsh=MWJseWwzODlrdjB6eA==" target="_blank" class="text-white me-3">
+              <i class="fab fa-instagram fa-2x"></i>
+            </a>
+            <a href="https://wa.me/5491133706391" target="_blank" class="text-white me-3">
+              <i class="fab fa-whatsapp fa-2x"></i>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100076242611702&locale=es_LA" target="_blank" class="text-white">
+              <i class="fab fa-facebook-f fa-2x"></i>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Scripts del sitio -->
+  <script src="scripts/app.js"></script>
+  <script src="scripts/script.js"></script>
+  <script src="scripts/main.js"></script>
+
+</body>
+</html>
