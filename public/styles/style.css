@@ -161,6 +161,7 @@ flex-shrink: 0;
     position: relative; /* Necesario para posicionar el contador */
     color: var(--oscuro); /* Negro para el ícono */
     padding: 0;
+    right: -17px;
     transition: color 0.3s ease;
     line-height: 1; /* Alineación del ícono */
 }
@@ -173,21 +174,21 @@ flex-shrink: 0;
 /* Estilo para el ícono (asegurando el color negro) */
 .boton-carrito i {
     color: var(--oscuro); /* Negro */
-    font-size: 2rem; /* Tamaño del ícono, puedes ajustar a tu gusto */
+    font-size: 1.5rem; /* Tamaño del ícono, puedes ajustar a tu gusto */
 }
 
 /* Estilo para el Contador de Productos (el número) */
 .contador-carrito {
     position: absolute;
-    top: -10px; /* Sube la posición por encima del carrito */
+    top: -9px; /* Sube la posición por encima del carrito */
     right: -10px; /* Desplaza a la derecha del carrito */
     
-    background-color: var(--rosaoscuro); /* Rosa fuerte para que destaque */
+    background-color: var(--blanco); /* Blanco para que destaque */
     color: var(--oscuro); /* Número en negro */
     
     border-radius: 50%; /* Lo hace circular */
     padding: 2px 7px;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     font-weight: bold;
     min-width: 25px; /* Asegura un ancho mínimo para números de 1 o 2 dígitos */
     text-align: center;
