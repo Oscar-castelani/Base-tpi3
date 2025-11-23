@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 listItem.classList.add('col-lg-3','col-sm-6','my-3');
                 listItem.innerHTML = 
                                     `
-                                        <div class='col-12 bg-white text-center h-100 product-item'>
+                                        <div class='col-12  text-center h-100 product-item'>
                                             <div class='row h-100'>
                                                 <div class='col-12 p-0 mb-3'>
                                                     <a href="#">
