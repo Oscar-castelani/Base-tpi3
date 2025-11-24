@@ -382,51 +382,30 @@ a.product-name:hover, a.product-name:focus {
     color: #0011ff;
 }
 
-.footer-logo {
-    font-size: 1.65rem;
-    font-family: 'roboto', sans-serif;
+.footer-latiendita {
+    background-color: var(--rosa);
+    color: #000 ;
+    padding-left: 150px;
+    padding-right: 30px;
+}
+.footer-links a {
+    color: #000 !important;       
+    text-decoration: none !important;
 }
 
-.footer-nav {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+.footer-links a:hover {
+    color: var(--rosaoscuro) !important; 
 }
-.col-10 { 
-    color: #ffffff;
-    display: flex;
-    text-align: center;
+.social-links-container a {
+    color: #000 !important;  
 }
+
+.social-links-container a:hover {
+    color: var(--rosaoscuro) !important; 
+}
+
 .footer-nav li {
     margin-top: 10px;
-}
-
-.footer-logo a, .footer-nav a{
-    color: #316dee;
-    text-decoration: none;
-}
-
-.footer-logo img {
-    max-height: 40px;
-}
-
-.col-13 {
-    max-width: 600px;
-    color: #ffffff;
-    font-size: 16px;
-    text-align: center;
-    margin-left: 80%;
-    margin-right: auto;
-    display: flex;          
-    justify-content: center; 
-    align-items: center;    
-}
-
-
-.social-icon {
-    color: #e0e0e0;
-    font-size: 13px;
-    margin-right: 10px;
 }
 
 
