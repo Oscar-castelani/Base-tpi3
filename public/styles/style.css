@@ -663,16 +663,24 @@ table td img {
 }
 
 /* Estilo para el botón del menú hamburguesa */
+/* Estilo para el botón del menú hamburguesa */
 .navbar-toggler {
     /* Quitar borde y color de fondo predeterminado de Bootstrap */
     border: none;
     padding: 0;
     line-height: 1;
 }
+.offcanvas-title {
+  color: #000 !important;
+}
+.btn-close {
+  filter: invert(0) !important; /* 0 = negro, 1 = blanco */
+  opacity: 1 !important; /* más visible */
+}
 
 /* Estilo del ícono (asumiendo que estás usando Font Awesome para el ícono) */
 .navbar-toggler-icon i {
-    color: #ffffff; /* Color del ícono del menú */
+    color: var(--oscuro); /* Color del ícono del menú */
     transition: color 0.3s ease;
 }
 
@@ -689,7 +697,7 @@ table td img {
 }
 
 .offcanvas-rosa {
-    background-color: #ff75f4 !important;
+    background-color: var(--rosa) !important;
 }
 .offcanvas-body .nav-link:hover {
     color: #ffffff !important; /* Se queda blanco, no cambia */
@@ -699,14 +707,13 @@ nav ul li a:hover {
 }
 /* --- FIX DEFINITIVO: evitar hover rosado solo en el menú offcanvas --- */
 .offcanvas-body .nav-link {
-    color: #ffffff !important; /* Texto blanco siempre */
+    color: var(--oscuro) !important; /* Texto blanco siempre */
 }
 
 .offcanvas-body .nav-link:hover,
 .offcanvas-body .nav-link:focus {
     color: #ffffff !important; /* Mantener blanco en hover */
 }
-
 .mapa {
     max-width: 98%;
     display: block;
