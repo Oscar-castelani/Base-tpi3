@@ -868,3 +868,73 @@ article img {
   align-items: center;
   justify-content: center;
 }
+
+/* CONTENEDOR DE BOTONES DEL CATÁLOGO */
+.botones-catalogo {
+    display: grid;
+    gap: 0.5rem;
+    row-gap: 0rem;
+    margin: 40px auto;
+    margin-top: 20px;
+    grid-template-columns: 1fr;      /* 1 botón por fila en móvil */
+    max-width: 90%;
+}
+
+/* ESTILO DE CADA BOTÓN/ENLACE */
+.botones-catalogo a {
+    display: block;
+    padding: 1.2rem 1.6rem;           /* botones grandes */
+    font-size: 1.4rem;              /* texto grande */
+    text-align: center;
+    border-radius: 12px;            /* borde suave */
+    
+}
+
+/* ESCRITORIO: 3 BOTONES POR FILA */
+@media (min-width: 768px) {
+    .botones-catalogo {
+        grid-template-columns: repeat(3, auto);
+    }
+
+    .botones-catalogo a {
+        padding: 1rem 1.5rem;
+        font-size: 1.3rem;
+        
+    }
+}
+
+.btn-verde{
+    background-color: var(--rosa);
+    border: none;
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+.btn-verde:hover{
+    background-color: var(--rosaoscuro);
+}
+
+/* Botón carrito estilo La Tiendita */
+.btn-carrito-tiendi {
+  background-color: #7cc47f;      /* verde suave de La Tiendita */
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s ease-in-out;
+}
+
+/* Hover */
+.btn-carrito-tiendi:hover {
+  background-color: #5ea461;      /* verde un poquito más oscuro */
+  transform: scale(1.07);
+  cursor: pointer;
+}
+
+/* Ícono */
+.btn-carrito-tiendi i {
+  font-size: 1.3rem;
+}

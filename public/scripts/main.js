@@ -33,8 +33,11 @@ document.addEventListener('DOMContentLoaded', () => {
                                                     <span class="product-price">
                                                     $${product.price}
                                                     </span>
+                                                    
                                                 </div>
+                                                
                                             </div>
+                                            
                                         </div>
                                     `;
                 productList.appendChild(listItem);
