@@ -174,10 +174,8 @@ flex-shrink: 0;
     position: absolute;
     top: -9px; 
     right: -10px; 
-    
     background-color: var(--blanco); 
     color: var(--oscuro); /* Número en negro */
-    
     border-radius: 50%; 
     padding: 2px 7px;
     font-size: 0.6rem;
@@ -204,10 +202,6 @@ flex-shrink: 0;
 }
 
 
-.distinta {
-    font-family: 'amatic sc', cursive;
-    font-weight: lighter;
-}
 .site-logo img {
     max-height: 60px;
 }
@@ -255,8 +249,8 @@ flex-shrink: 0;
 }
 
 .bienvenidos {
-    font-family: "Pacifico", cursive;
-    font-weight: 600;
+    font-family: 'Righteous', cursive;
+    font-weight: 500;
     font-style: normal;
     font-size: 3rem;
     margin-bottom: 9px;
@@ -310,12 +304,18 @@ flex-direction: row-reverse;
 
 .imagenes-nosotros img{
     border-radius: 5px;
+    border: 3px solid var(--rosa);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
     width: 100%;
     max-width: 500px;
     height: auto;
-
 }
 
+.nombre-tienda {
+    font-family: 'Righteous', cursive;
+    color: var(--oscuro); 
+    font-weight: 600;
+}
 .product-item {
     border: #000 solid 1.5px;
     border-radius: 10px;
