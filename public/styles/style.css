@@ -37,14 +37,14 @@ a {
     
 }
 .titulo-principal a {
-  color: #000 !important;
-  text-decoration: none !important;
+color: #000 !important;
+text-decoration: none !important;
 }
 
 .titulo-principal a:hover,
 .titulo-principal a:focus {
-  color: var(--blanco) !important;
-  text-decoration: none !important;
+color: var(--blanco) !important;
+text-decoration: none !important;
 }
 
 
@@ -595,11 +595,12 @@ table td img {
 
 .btn-rosa {
     display: inline-block;
-    padding: 7px 15px;
+    padding: 7px 10px;
     background-color:  #ffc2e8; /* rosa claro */
     color: #000000;
     border: 2px solid #000000;
     border-radius: 5px;
+    margin: 19px 0;
     text-decoration: none;
     font-weight: bold;
     transition: all 0.3s ease;
