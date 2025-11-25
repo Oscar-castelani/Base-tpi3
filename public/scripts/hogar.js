@@ -30,8 +30,14 @@ document.addEventListener('DOMContentLoaded', () => {
                   <span class="product-price">
                     $${product.price}
                   </span>
+                  
                 </div>
+                <button class="btn-carrito-tiendi">
+                  <i class="fas fa-shopping-cart"></i>
+                  </button>
+                
               </div>
+
             </div>
           `;
 
