@@ -140,6 +140,11 @@ a.product-name:hover, a.product-name:focus {
     margin-top: 10px;
 }
 
+.footer-nav li:hover {
+    background-color: var(--rosaoscuro);
+    color: var(--rosaoscuro);
+}
+
 .footer-logo a, .footer-nav a{
     color: #e0e0e0;
     text-decoration: none;

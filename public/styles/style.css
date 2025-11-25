@@ -48,27 +48,23 @@ a {
 }
 
 
-/* ------------------------------
-BUSCADOR EN EL HEADER
-   ------------------------------ */
 
-/* Contenedor principal del buscador */
 .buscador {
 display: flex;
 align-items: center;
 gap: .6rem;
-flex: 1;              /* ocupa espacio entre logo y menú */
-max-width: 520px;      /* tamaño equilibrado */
+flex: 1;              
+max-width: 520px;      
 min-width: 220px;
 }
 
-/* Input blanco estilo La Tiendita */
+
 .buscador input {
 flex: 1;
 height: 42px;
 background: #fff;
 color: var(--oscuro);
-border: 2px solid #000;         /* borde negro, estilo tiendita */
+border: 2px solid #000;        
 border-radius: 999px;
 padding: 0 1.2rem;
 font-size: 1.4rem;
@@ -80,7 +76,7 @@ color: #666;
 font-size: 1rem;
 }
 
-/* Botón blanco redondo */
+
 .buscador button {
 width: 42px;
 height: 42px;
@@ -149,60 +145,56 @@ flex-shrink: 0;
     color: var(--blanco);
 }
 
-/* ==============================
-   ESTILOS CARRITO DE COMPRAS
-   ============================== */
 
-/* Contenedor del Botón de Carrito */
 .boton-carrito {
     background: none;
     border: none;
     cursor: pointer;
-    position: relative; /* Necesario para posicionar el contador */
-    color: var(--oscuro); /* Negro para el ícono */
+    position: relative; 
+    color: var(--oscuro); 
     padding: 0;
     right: -17px;
     transition: color 0.3s ease;
-    line-height: 1; /* Alineación del ícono */
+    line-height: 1; 
 }
 
-/* Estilo del ícono del carrito al pasar el ratón */
+
 .boton-carrito:hover {
-    color: var(--verde); /* Puedes usar un color que contraste, elegí el verde que tienes definido */
+    color: var(--verde); 
 }
 
-/* Estilo para el ícono (asegurando el color negro) */
+
 .boton-carrito i {
-    color: var(--oscuro); /* Negro */
-    font-size: 1.5rem; /* Tamaño del ícono, puedes ajustar a tu gusto */
+    color: var(--oscuro); 
+    font-size: 1.5rem;
 }
 
-/* Estilo para el Contador de Productos (el número) */
+
 .contador-carrito {
     position: absolute;
-    top: -9px; /* Sube la posición por encima del carrito */
-    right: -10px; /* Desplaza a la derecha del carrito */
+    top: -9px; 
+    right: -10px; 
     
-    background-color: var(--blanco); /* Blanco para que destaque */
+    background-color: var(--blanco); 
     color: var(--oscuro); /* Número en negro */
     
-    border-radius: 50%; /* Lo hace circular */
+    border-radius: 50%; 
     padding: 2px 7px;
     font-size: 0.6rem;
     font-weight: bold;
-    min-width: 25px; /* Asegura un ancho mínimo para números de 1 o 2 dígitos */
+    min-width: 25px;
     text-align: center;
     line-height: 1.2;
 }
 
-/* Ajuste al navbar-toggler, ya que lo movimos de posición absoluta */
+
 .top-header .col-auto .navbar-toggler {
-    position: static; /* Quitamos la posición absoluta que tenías */
-    /* El espaciado ahora lo maneja la clase Bootstrap 'gap-3' en el contenedor padre */
+    position: static; 
+   
 }
 
 .top-header .row > .col-auto:last-child {
-    /* Establece un margen derecho forzado para separar los íconos del borde. */
+   
     margin-right: 30px !important; 
 }
 .site-logo {
@@ -211,7 +203,7 @@ flex-shrink: 0;
     font-family: 'roboto', sans-serif;
 }
 
-/* Bloque CSS para la fuente de "La Tiendita" */
+
 .distinta {
     font-family: 'amatic sc', cursive;
     font-weight: lighter;
@@ -270,11 +262,11 @@ flex-shrink: 0;
     margin-bottom: 9px;
     color: var(--oscuro);
     margin-top: 5rem;
-    text-align: center; /* 1. Centrar título */
+    text-align: center; 
 }
 
 .bienvenidos a {
-    text-decoration: none; /*Para quitar el subrayado del enlace*/
+    text-decoration: none; 
     color: inherit;
 }
 .parrafo-bienvenidos {
@@ -291,7 +283,7 @@ flex-shrink: 0;
 .contenedor-nosotros{
     padding-top: 5rem;
     width: 90%;
-    margin: 0 auto; /* Para centrar el título principal */
+    margin: 0 auto; 
 }
 @media(min-width: 768px) {
 .contenedor-nosotros{
@@ -310,7 +302,7 @@ flex-direction: row-reverse;
 }
 }
 
-  /* Espaciados laterales opcionales para que respire */
+ 
 .imagenes-nosotros{
     display: flex;
     justify-content: center;
@@ -364,16 +356,16 @@ a.product-name:hover, a.product-name:focus {
 }
 
 .product-description {
-    font-size: 20px;       /* cambia tamaño */
-    color: black;           /* color gris más suave */
-    line-height: 1.4;      /* separa líneas */
-    margin-top: -10px;     /* sube la descripción si la querés más cerca del nombre */
+    font-size: 20px;      
+    color: black;          
+    line-height: 1.4;     
+    margin-top: -10px;     
 }
 
 .product-description strong {
-    color: #000;           /* texto fuerte en negro */
-    font-weight: 700;      /* más grueso */
-    font-size: 20px;       /* un poco más grande */
+    color: #000;           
+    font-weight: 700;     
+    font-size: 20px;      
 }
 
 .product-price {
@@ -627,11 +619,11 @@ table td img {
     }
 
 }
-/* Ajustar tamaño del slider con imágenes */
+
 .slider-img {
     width: 100%;
-    height: 55vh;          /* Ajusta el alto del banner */
-    object-fit: cover;     /* Recorta sin deformar */
+    height: 55vh;         
+    object-fit: cover;    
     display: block;
 }
 
@@ -641,21 +633,21 @@ table td img {
     }
 }
 
-/* Asegura que los íconos se comporten como bloques para que puedan ser alineados, y añade transición */
+ 
 .social-links-container a {
     display: inline-block;
     transition: color 0.3s ease; 
 }
 
-/* Aplicamos el HOVER con el selector CORREGIDO y el !important para sobreescribir Bootstrap */
+
 .social-links-container a:hover {
-    /* Cambia al color rosa/morado que elegiste */
+   
     color: #ff67de !important; 
 }
-/* --- Ajustes para el Header Modificado --- */
 
 
-/* Ajuste para pantallas pequeñas (móviles) si es necesario */
+
+
 @media (max-width: 576px) {
     .logo-header {
         width: 100px; /* Un poco más pequeño en móviles */
@@ -663,9 +655,9 @@ table td img {
 }
 
 /* Estilo para el botón del menú hamburguesa */
-/* Estilo para el botón del menú hamburguesa */
+
 .navbar-toggler {
-    /* Quitar borde y color de fondo predeterminado de Bootstrap */
+   
     border: none;
     padding: 0;
     line-height: 1;
@@ -705,14 +697,14 @@ table td img {
 nav ul li a:hover {
     color: inherit !important;
 }
-/* --- FIX DEFINITIVO: evitar hover rosado solo en el menú offcanvas --- */
+
 .offcanvas-body .nav-link {
-    color: var(--oscuro) !important; /* Texto blanco siempre */
+    color: var(--oscuro) !important; 
 }
 
 .offcanvas-body .nav-link:hover,
 .offcanvas-body .nav-link:focus {
-    color: #ffffff !important; /* Mantener blanco en hover */
+    color: #ffffff !important; 
 }
 .mapa {
     max-width: 98%;
@@ -779,29 +771,32 @@ nav ul li a:hover {
   padding: 20px;
   font-family: Arial, Helvetica, sans-serif;
   color: black;
-  border: solid;
-  border-radius: 12px;
+  margin-bottom: 20px;
 }
 
 .intro {
     font-size: 1.5rem;
     text-align: left;
     font-weight: 600;
-    color: rgb(8, 92, 8);
+    color: var(--oscuro);
     margin-top: 50px;
+    border: solid 2px;
+    border-radius: 12px;
+    padding: 20px;
 }
 
 
 /* Títulos */
 .blog h2{
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Pacifico", cursive;
+  font-weight: 600;
+  font-style: normal;
   font-size: 2rem;
   color: black;
   text-align: center;
   margin-top: 30px;
   margin-bottom: 1.6rem;
   padding-bottom: .6rem;
-  text-decoration: underline;
 }
 
 .blog .consejos ol li{ margin-bottom: .8rem; }
@@ -833,18 +828,18 @@ article img {
 }
 
 .consejos ol {
-  counter-reset: item;              /* reinicia la numeración personalizada */
-  list-style: none;                 /* quita la numeración clásica */
+  counter-reset: item;              
+  list-style: none;                
   padding-left: 0;
   margin: 30px 0;
 }
 
 .consejos li {
-  counter-increment: item;          /* incrementa el contador */
+  counter-increment: item;         
   margin-bottom: 18px;
   padding: 18px 20px;
   background: lightgrey;              
-  border-left: 5px solid #8bc34a;   /* detalle vertical tipo “premium” */
+  border-left: 5px solid var(--rosaoscuro);   
   border-radius: 8px;
   font-size: 18px;
   line-height: 1.6;
@@ -852,6 +847,11 @@ article img {
   font-weight: 500;
   max-width: 95%;
   margin-left: 40px;
+  border: solid 1px;
+}
+
+.consejos li:hover {
+    box-shadow: #000000 0 0 10px 1px;
 }
 
 /* Burbuja de número estilizada */
@@ -861,7 +861,7 @@ article img {
   left: -35px;
   top: 50%;
   transform: translateY(-50%);
-  background: #8bc34a;
+  background: var(--rosaoscuro);
   color: white;
   width: 28px;
   height: 28px;
@@ -880,21 +880,22 @@ article img {
     row-gap: 0rem;
     margin: 40px auto;
     margin-top: 20px;
-    grid-template-columns: 1fr;      /* 1 botón por fila en móvil */
+    grid-template-columns: 1fr;     
     max-width: 90%;
 }
 
-/* ESTILO DE CADA BOTÓN/ENLACE */
+
 .botones-catalogo a {
     display: block;
-    padding: 1.2rem 1.6rem;           /* botones grandes */
-    font-size: 1.4rem;              /* texto grande */
+    padding: 1.2rem 1.6rem;           
+    font-size: 1.4rem;             
     text-align: center;
-    border-radius: 12px;            /* borde suave */
+    border-radius: 12px;            
+    border: solid 1px;
     
 }
 
-/* ESCRITORIO: 3 BOTONES POR FILA */
+
 @media (min-width: 768px) {
     .botones-catalogo {
         grid-template-columns: repeat(3, auto);
@@ -917,11 +918,11 @@ article img {
     background-color: var(--rosaoscuro);
 }
 
-/* Botón carrito estilo La Tiendita */
+
 .btn-carrito-tiendi {
-  background-color: #7cc47f;      /* verde suave de La Tiendita */
-  color: white;
-  border: none;
+  background-color: var(--rosaoscuro);      
+  color: var(--oscuro);
+  border: solid black 1px;
   padding: 10px 14px;
   border-radius: 10px;
   font-size: 1.2rem;
@@ -931,14 +932,14 @@ article img {
   transition: 0.2s ease-in-out;
 }
 
-/* Hover */
+
 .btn-carrito-tiendi:hover {
-  background-color: #5ea461;      /* verde un poquito más oscuro */
+  background-color: var(--rosaoscuro);    
   transform: scale(1.07);
   cursor: pointer;
 }
 
-/* Ícono */
+
 .btn-carrito-tiendi i {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
