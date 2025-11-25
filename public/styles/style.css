@@ -708,38 +708,45 @@ nav ul li a:hover {
     color: #ffffff !important; 
 }
 .mapa {
-    max-width: 98%;
+    max-width: 100%;
     display: block;
-    margin: 0 auto;
-    margin-left: 20px;
-    margin-top: 40px;
-    border-radius: 8px;
-    border: 2px solid;
-    padding: 20px;
+    margin: 10px auto;
+    margin-left: 0 1px; 
+    padding: 0 30px;
+    margin-top: 10px;
+    border-radius: 25%;
     text-align: center;
 }
 .mapa iframe {
-    width: 90%;
-    height: 450px;
+    width: 99%;
+    height: 550px;
     display: block;
     margin: 0 auto;
     border-radius: 30px;
-    padding: 20px;
+    padding: 15px;
+ box-shadow: 0 4px 8px rgba(243, 5, 231, 0.1);
+}
+
+.cambio-de-fuente {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
 }
 
 .contacto {
-	margin: 5%;
+	margin: 5% auto;
+    max-width: 96%;
+    margin-left: 0 1px;
 }
 
 .contacto-contenedor {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 40px; 
-  border: solid 2px red;
-  border-radius: 10px;
-  padding: 1rem;
-  background-color: pink;
+  gap: 40px;
+  border-radius: 30px;;
+  background-color:#ffc2e8;
+  padding: 2rem;
+  box-shadow: 0 6px 15px rgba(253, 1, 241, 0.1);
 }
 
 .contacto-form {
