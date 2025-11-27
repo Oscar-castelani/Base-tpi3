@@ -985,3 +985,30 @@ article img {
 .redes-sociales{
     font-size: 2.5rem;
 }
+.blog-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.blog-card h3 {
+    color: #2e7d32;
+    margin-bottom: 10px;
+}
+
+.blog-card ul {
+    margin-top: 10px;
+    padding-left: 18px;
+}
+
+.blog-card .tip {
+    background: #e8f5e9;
+    padding: 10px;
+    border-left: 4px solid #66bb6a;
+    margin-top: 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
