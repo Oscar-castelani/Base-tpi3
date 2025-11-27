@@ -799,7 +799,7 @@ nav ul li a:hover {
 }
 
 
-/* Títulos */
+
 .blog h2{
   font-family: "Pacifico", cursive;
   font-weight: 600;
@@ -812,7 +812,10 @@ nav ul li a:hover {
   padding-bottom: .6rem;
 }
 
-.blog .consejos ol li{ margin-bottom: .8rem; }
+.blog .consejos ol li{
+     margin-bottom: .8rem; 
+     text-decoration: none;
+    }
 
 .blog h3{
   font-family: Arial, Helvetica, sans-serif;
@@ -834,7 +837,9 @@ article img {
   height: auto;
   border-radius: 8px;   
   object-fit: cover;
+  border: 2px solid black;
 }
+
 
 .texto-blog{
     font-size: 1.5rem;
@@ -989,22 +994,36 @@ article img {
     background: #fff;
     padding: 20px;
     border-radius: 12px;
+    border: solid 2px var(--rosaoscuro);
     margin-bottom: 25px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-
+    
+    
 }
+
 
 .blog-card ul {
     margin-top: 10px;
     padding-left: 18px;
 }
 
+
+
 .blog-card .tip {
     background: #e8f5e9;
     padding: 10px;
-    border-left: 4px solid #66bb6a;
+    border-left: 4px solid var(--rosaoscuro);
     margin-top: 15px;
     font-size: 14px;
     border-radius: 5px;
     font-family: Arial, Helvetica, sans-serif;
+}
+.consejos ol li a {
+  text-decoration: none;
+  color: var(--oscuro);
+  font-weight: 500;
+}
+
+.consejos ol li a:hover {
+  color: var(--rosaoscuro);  
+  cursor: pointer;
 }
