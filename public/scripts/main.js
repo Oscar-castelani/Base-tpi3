@@ -1,14 +1,13 @@
 // public/scripts/main.js
+class llamarServerProducts {
 
-document.addEventListener('DOMContentLoaded', () => {
-    // Hacer una solicitud GET al servidor para obtener la información de productos
-    try {
-        fetch('http://localhost:3000/api/products')
+    /***
+     * obtiene un endpoint y añade dentro del container cada uno de los productos
+     */
+    fetchApi(endpoint,container) {
+        fetch(`http://localhost:3000/api/${endpoint}`)
         .then(response => response.json())
         .then(products => {
-            // Manipular los datos en el frontend, por ejemplo, mostrarlos en la lista
-            const productList = document.getElementById('product-list');
-  
             products.forEach(product => {
                 const listItem = document.createElement('div');
                 listItem.classList.add('col-lg-3','col-sm-6','my-3');
@@ -43,45 +42,19 @@ document.addEventListener('DOMContentLoaded', () => {
                                             
                                         </div>
                                     `;
-                productList.appendChild(listItem);
+                container.appendChild(listItem);
             });
         })
-        .catch(error => {
-            console.error('Error fetching products:', error);
-        });
+    }
+
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    try {
+        const productList = document.getElementById('product-list');
+        llamarServerProducts.fetchApi("products",productList)
     }catch (e) {
-        console.log('try-catch')
+        console.log('hay un error durante la carga de productos\n detalles: ')
         console.log(e)
     }
 });
-  
-
-/***
- *   
-                                    <div class="col-lg-3 col-sm-6 my-3">
-                                        <div class="col-12 bg-white text-center h-100 product-item">
-                                            <div class="row h-100">
-                                                <div class="col-12 p-0 mb-3">
-                                                    <a href="#">
-                                                        <img src="images/image-1.jpg" class="img-fluid">
-                                                    </a>
-                                                </div>
-                                                <div class="col-12 mb-3">
-                                                    <a href="#" class="product-name">Sony Alpha DSLR Camera</a>
-                                                </div>
-                                                <div class="col-12 mb-3">
-                                                    <span class="product-price-old">
-                                                        $500
-                                                    </span>
-                                                    <br>
-                                                    <span class="product-price">
-                                                        $500
-                                                    </span>
-                                                </div>
-                                                <div class="col-12 mb-3 align-self-end">
-                                                    <button class="btn btn-outline-dark" type="button"><i class="fas fa-cart-plus me-2"></i>Add to cart</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
- */
